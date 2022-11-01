@@ -13,7 +13,7 @@ build:
   runs-on: ubuntu-latest
   
   steps:
-  - uses: actions/checkout@v3
+  - uses: actions/checkout@v3.0
 - name: PerfAction for JMeter
   # You may pin to the exact commit or the version.
   # uses: QAInsights/PerfAction@e9460cd32edbd6686068034e4b2d5c0fa7a1568d
