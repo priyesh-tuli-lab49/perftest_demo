@@ -14,16 +14,11 @@ build:
   
   steps:
   - uses: actions/checkout@v3.0
-- name: PerfAction for JMeter
-  # You may pin to the exact commit or the version.
-  # uses: QAInsights/PerfAction@e9460cd32edbd6686068034e4b2d5c0fa7a1568d
+  - name: JMeter Test
   uses: QAInsights/PerfAction@3.0
   with:
-    # jmeter test plan to execute
     test-plan-path: ./Case-study-user.jmx
-    # Optional arguments. For more details https://jmeter.apache.org/usermanual/get-started.html#non_gui
-    args: # optional
-    
+    args: ""
 - name: Upload Results
   uses: actions/upload-artifact@v2
   with:
