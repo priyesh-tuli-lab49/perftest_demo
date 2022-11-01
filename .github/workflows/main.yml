@@ -2,7 +2,7 @@ name : CI-Perf
 on: 
 push:
   branches: [main]
-pull-request:
+pull_request:
   branches:[main]
   
 workflow-dispatch:
@@ -10,7 +10,7 @@ workflow-dispatch:
 jobs:
 
 build:
-  runs-on:ubuntu-latest
+  runs-on: ubuntu-latest
   
   steps:
   - uses: actions/checkout@v2
