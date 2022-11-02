@@ -5,9 +5,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: QAInsights/PerfAction@3.0
+
     - name: JMeter Test
-      uses: QAInsights/PerfAction@v2.0
+      uses: QAInsights/PerfAction@3.0
       with:
         test-plan-path: ./Case-study-user.jmx
         args: ""
