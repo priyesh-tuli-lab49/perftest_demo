@@ -7,7 +7,7 @@ jobs:
     steps:
 
     - name: JMeter Test
-      uses: QAInsights/PerfAction@3.0
+      uses: QAInsights/PerfAction@v1.0
       with:
         test-plan-path: 'My_test.jmx'
         args: ""
