@@ -2,7 +2,7 @@
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Case study user" enabled="true">
-      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.3.1.23. Please contact support@blazemeter.com for further support.</stringProp>
+      <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
@@ -95,8 +95,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">0</stringProp>
         <stringProp name="ThreadGroup.delay">0</stringProp>
@@ -105,7 +105,7 @@
       <hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Landing Page" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.lab49.com/" enabled="true">
@@ -137,7 +137,7 @@
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Case Studies Page" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.lab49.com/case-studies/" enabled="true">
@@ -160,16 +160,16 @@
           </HTTPSamplerProxy>
           <hashTree>
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
-              <stringProp name="RandomTimer.range">13188.0</stringProp>
-              <stringProp name="ConstantTimer.delay">6594</stringProp>
-              <stringProp name="TestPlan.comments">Recorded time was 13188 milliseconds</stringProp>
+              <stringProp name="RandomTimer.range">10000</stringProp>
+              <stringProp name="ConstantTimer.delay">1000</stringProp>
+              <stringProp name="TestPlan.comments">Recorded time was 35860 milliseconds</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ESG Platform" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.lab49.com/case-studies/rebuilding-a-large-development-banks-esg-platform/" enabled="true">
@@ -192,8 +192,8 @@
           </HTTPSamplerProxy>
           <hashTree>
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
-              <stringProp name="RandomTimer.range">35860.0</stringProp>
-              <stringProp name="ConstantTimer.delay">17930</stringProp>
+              <stringProp name="RandomTimer.range">10000</stringProp>
+              <stringProp name="ConstantTimer.delay">1000</stringProp>
               <stringProp name="TestPlan.comments">Recorded time was 35860 milliseconds</stringProp>
             </UniformRandomTimer>
             <hashTree/>
@@ -201,7 +201,7 @@
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Case Studies Page" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.lab49.com/case-studies/" enabled="true">
@@ -222,18 +222,17 @@
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
-          <hashTree>
-            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
-              <stringProp name="RandomTimer.range">22327.0</stringProp>
-              <stringProp name="ConstantTimer.delay">11163.5</stringProp>
-              <stringProp name="TestPlan.comments">Recorded time was 22327 milliseconds</stringProp>
-            </UniformRandomTimer>
-            <hashTree/>
-          </hashTree>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">10000</stringProp>
+            <stringProp name="ConstantTimer.delay">1000</stringProp>
+            <stringProp name="TestPlan.comments">Recorded time was 35860 milliseconds</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UBS Neo" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.lab49.com/case-studies/ubs-neo-building-a-cross-asset-trading-platform/" enabled="true">
@@ -256,16 +255,16 @@
           </HTTPSamplerProxy>
           <hashTree>
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
-              <stringProp name="RandomTimer.range">21943.0</stringProp>
-              <stringProp name="ConstantTimer.delay">10971.5</stringProp>
-              <stringProp name="TestPlan.comments">Recorded time was 21943 milliseconds</stringProp>
+              <stringProp name="RandomTimer.range">10000</stringProp>
+              <stringProp name="ConstantTimer.delay">1000</stringProp>
+              <stringProp name="TestPlan.comments">Recorded time was 35860 milliseconds</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Focus Areas Page" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.lab49.com/focus-areas/" enabled="true">
@@ -288,16 +287,16 @@
           </HTTPSamplerProxy>
           <hashTree>
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
-              <stringProp name="RandomTimer.range">32928.0</stringProp>
-              <stringProp name="ConstantTimer.delay">16464</stringProp>
-              <stringProp name="TestPlan.comments">Recorded time was 32928 milliseconds</stringProp>
+              <stringProp name="RandomTimer.range">10000</stringProp>
+              <stringProp name="ConstantTimer.delay">1000</stringProp>
+              <stringProp name="TestPlan.comments">Recorded time was 35860 milliseconds</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Contact Page" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.lab49.com/contact/" enabled="true">
@@ -320,14 +319,51 @@
           </HTTPSamplerProxy>
           <hashTree>
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
-              <stringProp name="RandomTimer.range">55239.0</stringProp>
-              <stringProp name="ConstantTimer.delay">27619.5</stringProp>
-              <stringProp name="TestPlan.comments">Recorded time was 55239 milliseconds</stringProp>
+              <stringProp name="RandomTimer.range">10000</stringProp>
+              <stringProp name="ConstantTimer.delay">1000</stringProp>
+              <stringProp name="TestPlan.comments">Recorded time was 35860 milliseconds</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
         </hashTree>
       </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>false</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>false</message>
+            <threadName>true</threadName>
+            <dataType>false</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <url>true</url>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">./results_file.xml</stringProp>
+      </ResultCollector>
+      <hashTree/>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
