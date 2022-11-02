@@ -5,21 +5,16 @@ push:
 pull_request:
   branches:[main]
   
-workflow-dispatch:
-
-jobs:
-
 build:
   runs-on: ubuntu-latest
-  
   steps:
   - uses: actions/checkout@v3.0
-  - name: JMeter Test
-  uses: QAInsights/PerfAction@3.0
+
+- name: JMeter Test
+  uses: QAInsights/PerfAction@v2.0
   with:
     test-plan-path: ./Case-study-user.jmx
     args: ""
-    
 - name: Upload Results
   uses: actions/upload-artifact@v2
   with:
