@@ -9,7 +9,7 @@ jobs:
     - name: JMeter Test
       uses: QAInsights/PerfAction@3.0
       with:
-        test-plan-path: My test.jmx
+        test-plan-path: 'My test.jmx'
         args: ""
     - name: Upload Results
       uses: actions/upload-artifact@v2
