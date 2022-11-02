@@ -1,11 +1,13 @@
 name : CI-Perf
 on: 
   push: 
+    branches: [main]
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
+    - uses: actions/checkout@v2
     - name: JMeter Test
       uses: QAInsights/PerfAction@3.0
       with:
